@@ -271,6 +271,7 @@
 		5F254C3C1DB0681D00DA5255 = {
 			isa = PBXGroup;
 			children = (
+				5F4BE6EC1DB0D70100798FFB /* RequestDownload */,
 				5FDA002E1DB0819D003DD655 /* Libs */,
 				5F254C471DB0681E00DA5255 /* iOS-FFmpeg-Player */,
 				5F254C611DB0681E00DA5255 /* iOS-FFmpeg-PlayerTests */,
@@ -372,6 +373,13 @@
 				5F4BE6C71DB0B4AB00798FFB /* MineViewController.m */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		5F4BE6EC1DB0D70100798FFB /* RequestDownload */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestDownload;
 			sourceTree = "<group>";
 		};
 		5FDA002E1DB0819D003DD655 /* Libs */ = {
