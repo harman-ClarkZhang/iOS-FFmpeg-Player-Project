@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="Jc7-vW-6Vh">
             <objects>
-                <viewController id="qYH-gF-Fh3" sceneMemberID="viewController">
+                <viewController id="qYH-gF-Fh3" customClass="NavigationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BzR-hP-5Id"/>
                         <viewControllerLayoutGuide type="bottom" id="mlj-0R-lJM"/>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.1855392505" blue="0.74057767829999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="channel_p_n" id="u4v-gT-NFf"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="channel_p_n" id="u4v-gT-NFf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQm-vx-WUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.30704081020000001" green="0.47531724980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ranking_p_n" id="SLz-Ak-LuX"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="" image="ranking_p_n" id="SLz-Ak-LuX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jh1-kh-xiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.33494274419999998" green="1" blue="0.87938864999999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="myqiyi_p_n" id="cUh-y6-Ens"/>
+                    <tabBarItem key="tabBarItem" tag="4" title="" image="myqiyi_p_n" id="cUh-y6-Ens"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1P-An-D61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.99312480280000004" blue="0.19254549209999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="recommend_p_n" id="Pxc-VV-Clz"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="recommend_p_n" id="Pxc-VV-Clz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSy-oF-2ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

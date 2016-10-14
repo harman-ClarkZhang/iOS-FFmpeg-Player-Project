@@ -18,6 +18,7 @@
 		5F4BE6C81DB0B4AB00798FFB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6C71DB0B4AB00798FFB /* MineViewController.m */; };
 		5F4BE6CB1DB0B4C500798FFB /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6CA1DB0B4C500798FFB /* DiscoveryViewController.m */; };
 		5F4BE6DA1DB0B61E00798FFB /* RecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6D91DB0B61E00798FFB /* RecommandViewController.m */; };
+		5F4BE6DF1DB0BD4300798FFB /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6DE1DB0BD4300798FFB /* NavigationViewController.m */; };
 		5FDA000F1DB07FBA003DD655 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA000E1DB07FBA003DD655 /* OpenGLES.framework */; };
 		5FDA00111DB07FC1003DD655 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00101DB07FC1003DD655 /* QuartzCore.framework */; };
 		5FDA00131DB07FD0003DD655 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00121DB07FD0003DD655 /* Accelerate.framework */; };
@@ -41,7 +42,6 @@
 		5FDA003B1DB081B8003DD655 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00341DB081B8003DD655 /* libavresample.a */; };
 		5FDA003C1DB081B8003DD655 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00351DB081B8003DD655 /* libavutil.a */; };
 		5FDA003D1DB081B9003DD655 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00361DB081B8003DD655 /* libswscale.a */; };
-		5FDA00B01DB0880B003DD655 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */; };
 		7AE21B9EE1338FBAA0D84286 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677E0EF8130B453339F0012F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +86,8 @@
 		5F4BE6CA1DB0B4C500798FFB /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
 		5F4BE6D81DB0B61E00798FFB /* RecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandViewController.h; sourceTree = "<group>"; };
 		5F4BE6D91DB0B61E00798FFB /* RecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandViewController.m; sourceTree = "<group>"; };
+		5F4BE6DD1DB0BD4300798FFB /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		5F4BE6DE1DB0BD4300798FFB /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		5FDA000E1DB07FBA003DD655 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5FDA00101DB07FC1003DD655 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5FDA00121DB07FD0003DD655 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -212,8 +214,6 @@
 		5FDA00A91DB082C0003DD655 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
 		5FDA00AB1DB082C0003DD655 /* swscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swscale.h; sourceTree = "<group>"; };
 		5FDA00AC1DB082C0003DD655 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
-		5FDA00AE1DB0880B003DD655 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
-		5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		5FDA00B11DB08A58003DD655 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		677E0EF8130B453339F0012F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20DFA51739452EDE3288C87 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -296,8 +296,6 @@
 			children = (
 				5F254C4B1DB0681E00DA5255 /* AppDelegate.h */,
 				5F254C4C1DB0681E00DA5255 /* AppDelegate.m */,
-				5FDA00AE1DB0880B003DD655 /* TabBarViewController.h */,
-				5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */,
 				5F4BE6BF1DB0B43F00798FFB /* BaseViewController.h */,
 				5F4BE6C01DB0B43F00798FFB /* BaseViewController.m */,
 				5FDA00B11DB08A58003DD655 /* PrefixHeader.pch */,
@@ -352,6 +350,8 @@
 		5F4BE6C31DB0B47C00798FFB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				5F4BE6DD1DB0BD4300798FFB /* NavigationViewController.h */,
+				5F4BE6DE1DB0BD4300798FFB /* NavigationViewController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -784,10 +784,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FDA00B01DB0880B003DD655 /* TabBarViewController.m in Sources */,
 				5F4BE6C11DB0B43F00798FFB /* BaseViewController.m in Sources */,
 				5F4BE6C81DB0B4AB00798FFB /* MineViewController.m in Sources */,
 				5F4BE6CB1DB0B4C500798FFB /* DiscoveryViewController.m in Sources */,
+				5F4BE6DF1DB0BD4300798FFB /* NavigationViewController.m in Sources */,
 				5F4BE6DA1DB0B61E00798FFB /* RecommandViewController.m in Sources */,
 				5F254C4D1DB0681E00DA5255 /* AppDelegate.m in Sources */,
 				5F254C4A1DB0681E00DA5255 /* main.m in Sources */,

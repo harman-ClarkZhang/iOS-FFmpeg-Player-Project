@@ -1,18 +1,18 @@
 //
-//  TabBarViewController.m
+//  NavigationViewController.m
 //  iOS-FFmpeg-Player
 //
 //  Created by harman on 2016/10/14.
 //  Copyright © 2016年 harman. All rights reserved.
 //
 
-#import "TabBarViewController.h"
+#import "NavigationViewController.h"
 
-@interface TabBarViewController ()
+@interface NavigationViewController ()
 
 @end
 
-@implementation TabBarViewController
+@implementation NavigationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
