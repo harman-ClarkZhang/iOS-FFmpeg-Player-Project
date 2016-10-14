@@ -8,6 +8,6 @@
 
 #import <RDVTabBarController/RDVTabBarController.h>
 
-@interface TabBarViewController : RDVTabBarController
+@interface TabBarViewController : UIViewController
 
 @end

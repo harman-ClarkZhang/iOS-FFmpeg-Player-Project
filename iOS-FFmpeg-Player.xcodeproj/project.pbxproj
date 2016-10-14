@@ -14,6 +14,10 @@
 		5F254C581DB0681E00DA5255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F254C561DB0681E00DA5255 /* LaunchScreen.storyboard */; };
 		5F254C631DB0681E00DA5255 /* iOS_FFmpeg_PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C621DB0681E00DA5255 /* iOS_FFmpeg_PlayerTests.m */; };
 		5F254C6E1DB0681E00DA5255 /* iOS_FFmpeg_PlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C6D1DB0681E00DA5255 /* iOS_FFmpeg_PlayerUITests.m */; };
+		5F4BE6C11DB0B43F00798FFB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6C01DB0B43F00798FFB /* BaseViewController.m */; };
+		5F4BE6C81DB0B4AB00798FFB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6C71DB0B4AB00798FFB /* MineViewController.m */; };
+		5F4BE6CB1DB0B4C500798FFB /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6CA1DB0B4C500798FFB /* DiscoveryViewController.m */; };
+		5F4BE6DA1DB0B61E00798FFB /* RecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BE6D91DB0B61E00798FFB /* RecommandViewController.m */; };
 		5FDA000F1DB07FBA003DD655 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA000E1DB07FBA003DD655 /* OpenGLES.framework */; };
 		5FDA00111DB07FC1003DD655 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00101DB07FC1003DD655 /* QuartzCore.framework */; };
 		5FDA00131DB07FD0003DD655 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00121DB07FD0003DD655 /* Accelerate.framework */; };
@@ -74,6 +78,14 @@
 		5F254C691DB0681E00DA5255 /* iOS-FFmpeg-PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-FFmpeg-PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F254C6D1DB0681E00DA5255 /* iOS_FFmpeg_PlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_FFmpeg_PlayerUITests.m; sourceTree = "<group>"; };
 		5F254C6F1DB0681E00DA5255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4BE6BF1DB0B43F00798FFB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5F4BE6C01DB0B43F00798FFB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5F4BE6C61DB0B4AB00798FFB /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		5F4BE6C71DB0B4AB00798FFB /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		5F4BE6C91DB0B4C500798FFB /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		5F4BE6CA1DB0B4C500798FFB /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		5F4BE6D81DB0B61E00798FFB /* RecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandViewController.h; sourceTree = "<group>"; };
+		5F4BE6D91DB0B61E00798FFB /* RecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommandViewController.m; sourceTree = "<group>"; };
 		5FDA000E1DB07FBA003DD655 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		5FDA00101DB07FC1003DD655 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5FDA00121DB07FD0003DD655 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -286,11 +298,17 @@
 				5F254C4C1DB0681E00DA5255 /* AppDelegate.m */,
 				5FDA00AE1DB0880B003DD655 /* TabBarViewController.h */,
 				5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */,
+				5F4BE6BF1DB0B43F00798FFB /* BaseViewController.h */,
+				5F4BE6C01DB0B43F00798FFB /* BaseViewController.m */,
 				5FDA00B11DB08A58003DD655 /* PrefixHeader.pch */,
 				5F254C511DB0681E00DA5255 /* Main.storyboard */,
 				5F254C541DB0681E00DA5255 /* Assets.xcassets */,
 				5F254C561DB0681E00DA5255 /* LaunchScreen.storyboard */,
 				5F254C591DB0681E00DA5255 /* Info.plist */,
+				5F4BE6C51DB0B49300798FFB /* Mine */,
+				5F4BE6C41DB0B48B00798FFB /* Discovery */,
+				5F4BE6C31DB0B47C00798FFB /* Navigation */,
+				5F4BE6C21DB0B46500798FFB /* Recommand */,
 				5F254C481DB0681E00DA5255 /* Supporting Files */,
 			);
 			path = "iOS-FFmpeg-Player";
@@ -320,6 +338,40 @@
 				5F254C6F1DB0681E00DA5255 /* Info.plist */,
 			);
 			path = "iOS-FFmpeg-PlayerUITests";
+			sourceTree = "<group>";
+		};
+		5F4BE6C21DB0B46500798FFB /* Recommand */ = {
+			isa = PBXGroup;
+			children = (
+				5F4BE6D81DB0B61E00798FFB /* RecommandViewController.h */,
+				5F4BE6D91DB0B61E00798FFB /* RecommandViewController.m */,
+			);
+			path = Recommand;
+			sourceTree = "<group>";
+		};
+		5F4BE6C31DB0B47C00798FFB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5F4BE6C41DB0B48B00798FFB /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				5F4BE6C91DB0B4C500798FFB /* DiscoveryViewController.h */,
+				5F4BE6CA1DB0B4C500798FFB /* DiscoveryViewController.m */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		5F4BE6C51DB0B49300798FFB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5F4BE6C61DB0B4AB00798FFB /* MineViewController.h */,
+				5F4BE6C71DB0B4AB00798FFB /* MineViewController.m */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		5FDA002E1DB0819D003DD655 /* Libs */ = {
@@ -615,6 +667,7 @@
 					5F254C441DB0681D00DA5255 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 9N6375B547;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					5F254C5D1DB0681E00DA5255 = {
@@ -732,6 +785,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FDA00B01DB0880B003DD655 /* TabBarViewController.m in Sources */,
+				5F4BE6C11DB0B43F00798FFB /* BaseViewController.m in Sources */,
+				5F4BE6C81DB0B4AB00798FFB /* MineViewController.m in Sources */,
+				5F4BE6CB1DB0B4C500798FFB /* DiscoveryViewController.m in Sources */,
+				5F4BE6DA1DB0B61E00798FFB /* RecommandViewController.m in Sources */,
 				5F254C4D1DB0681E00DA5255 /* AppDelegate.m in Sources */,
 				5F254C4A1DB0681E00DA5255 /* main.m in Sources */,
 			);
@@ -883,6 +940,7 @@
 			baseConfigurationReference = B20DFA51739452EDE3288C87 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N6375B547;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
@@ -894,6 +952,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -902,6 +963,7 @@
 			baseConfigurationReference = 37BF87C3BF89B27A39E08E69 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N6375B547;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
@@ -913,6 +975,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

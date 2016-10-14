@@ -1,27 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6OZ-8C-v2h">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="Jc7-vW-6Vh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TabBarViewController" sceneMemberID="viewController">
+                <viewController id="qYH-gF-Fh3" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="BzR-hP-5Id"/>
+                        <viewControllerLayoutGuide type="bottom" id="mlj-0R-lJM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="C6E-iW-9SP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.1855392505" blue="0.74057767829999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="channel_p_n" id="u4v-gT-NFf"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQm-vx-WUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1150" y="65"/>
+        </scene>
+        <!--Discovery View Controller-->
+        <scene sceneID="KOX-1M-ma8">
+            <objects>
+                <viewController id="2SH-ha-kOB" customClass="DiscoveryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LeY-lC-5WM"/>
+                        <viewControllerLayoutGuide type="bottom" id="F2h-1s-7Bk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dLR-Cp-2bK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.30704081020000001" green="0.47531724980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ranking_p_n" id="SLz-Ak-LuX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jh1-kh-xiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="820"/>
+        </scene>
+        <!--Mine View Controller-->
+        <scene sceneID="gLW-IO-oq8">
+            <objects>
+                <viewController id="D6s-nL-ao2" customClass="MineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ChT-jA-3Ad"/>
+                        <viewControllerLayoutGuide type="bottom" id="iYt-gK-ywt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zpt-vF-Qpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.33494274419999998" green="1" blue="0.87938864999999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="myqiyi_p_n" id="cUh-y6-Ens"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1P-An-D61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="1592"/>
+        </scene>
+        <!--Recommand View Controller-->
+        <scene sceneID="Zo7-by-FcH">
+            <objects>
+                <viewController id="E3N-lm-avA" customClass="RecommandViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mqo-La-hvt"/>
+                        <viewControllerLayoutGuide type="bottom" id="IET-Bq-af0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qco-mL-l9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.99312480280000004" blue="0.19254549209999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="recommend_p_n" id="Pxc-VV-Clz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSy-oF-2ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="-678"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mtJ-Aa-42L">
+            <objects>
+                <tabBarController id="6OZ-8C-v2h" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="036-sn-sJc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="E3N-lm-avA" kind="relationship" relationship="viewControllers" id="E2D-J6-d3s"/>
+                        <segue destination="qYH-gF-Fh3" kind="relationship" relationship="viewControllers" id="2q8-GR-iFF"/>
+                        <segue destination="2SH-ha-kOB" kind="relationship" relationship="viewControllers" id="BMz-Wy-vzw"/>
+                        <segue destination="D6s-nL-ao2" kind="relationship" relationship="viewControllers" id="swy-8z-mfX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyp-Ba-CAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="39"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="channel_p_n" width="128" height="98"/>
+        <image name="myqiyi_p_n" width="128" height="98"/>
+        <image name="ranking_p_n" width="128" height="98"/>
+        <image name="recommend_p_n" width="128" height="98"/>
+    </resources>
 </document>
