@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5F254C4A1DB0681E00DA5255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C491DB0681E00DA5255 /* main.m */; };
 		5F254C4D1DB0681E00DA5255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C4C1DB0681E00DA5255 /* AppDelegate.m */; };
-		5F254C501DB0681E00DA5255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C4F1DB0681E00DA5255 /* ViewController.m */; };
 		5F254C531DB0681E00DA5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F254C511DB0681E00DA5255 /* Main.storyboard */; };
 		5F254C551DB0681E00DA5255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F254C541DB0681E00DA5255 /* Assets.xcassets */; };
 		5F254C581DB0681E00DA5255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F254C561DB0681E00DA5255 /* LaunchScreen.storyboard */; };
@@ -38,6 +37,7 @@
 		5FDA003B1DB081B8003DD655 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00341DB081B8003DD655 /* libavresample.a */; };
 		5FDA003C1DB081B8003DD655 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00351DB081B8003DD655 /* libavutil.a */; };
 		5FDA003D1DB081B9003DD655 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDA00361DB081B8003DD655 /* libswscale.a */; };
+		5FDA00B01DB0880B003DD655 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */; };
 		7AE21B9EE1338FBAA0D84286 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677E0EF8130B453339F0012F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +64,6 @@
 		5F254C491DB0681E00DA5255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F254C4B1DB0681E00DA5255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F254C4C1DB0681E00DA5255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5F254C4E1DB0681E00DA5255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5F254C4F1DB0681E00DA5255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5F254C521DB0681E00DA5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F254C541DB0681E00DA5255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F254C571DB0681E00DA5255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,6 +200,9 @@
 		5FDA00A91DB082C0003DD655 /* xtea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
 		5FDA00AB1DB082C0003DD655 /* swscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swscale.h; sourceTree = "<group>"; };
 		5FDA00AC1DB082C0003DD655 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		5FDA00AE1DB0880B003DD655 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		5FDA00B11DB08A58003DD655 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		677E0EF8130B453339F0012F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20DFA51739452EDE3288C87 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -283,8 +284,9 @@
 			children = (
 				5F254C4B1DB0681E00DA5255 /* AppDelegate.h */,
 				5F254C4C1DB0681E00DA5255 /* AppDelegate.m */,
-				5F254C4E1DB0681E00DA5255 /* ViewController.h */,
-				5F254C4F1DB0681E00DA5255 /* ViewController.m */,
+				5FDA00AE1DB0880B003DD655 /* TabBarViewController.h */,
+				5FDA00AF1DB0880B003DD655 /* TabBarViewController.m */,
+				5FDA00B11DB08A58003DD655 /* PrefixHeader.pch */,
 				5F254C511DB0681E00DA5255 /* Main.storyboard */,
 				5F254C541DB0681E00DA5255 /* Assets.xcassets */,
 				5F254C561DB0681E00DA5255 /* LaunchScreen.storyboard */,
@@ -729,7 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F254C501DB0681E00DA5255 /* ViewController.m in Sources */,
+				5FDA00B01DB0880B003DD655 /* TabBarViewController.m in Sources */,
 				5F254C4D1DB0681E00DA5255 /* AppDelegate.m in Sources */,
 				5F254C4A1DB0681E00DA5255 /* main.m in Sources */,
 			);
@@ -882,6 +884,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9N6375B547;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-FFmpeg-Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -899,6 +903,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9N6375B547;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
 				INFOPLIST_FILE = "iOS-FFmpeg-Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
