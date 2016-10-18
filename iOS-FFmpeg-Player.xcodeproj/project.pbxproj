@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1F6A0A1DB60C8B0034F5FC /* 你究竟有几个好妹妹.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5F1F6A091DB60C8B0034F5FC /* 你究竟有几个好妹妹.mp3 */; };
+		5F1F6A0C1DB6176C0034F5FC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1F6A0B1DB6176C0034F5FC /* MediaPlayer.framework */; };
 		5F254C4A1DB0681E00DA5255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C491DB0681E00DA5255 /* main.m */; };
 		5F254C4D1DB0681E00DA5255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F254C4C1DB0681E00DA5255 /* AppDelegate.m */; };
 		5F254C531DB0681E00DA5255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F254C511DB0681E00DA5255 /* Main.storyboard */; };
@@ -92,6 +94,8 @@
 		5F1F69E81DB4C5620034F5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F1F69FB1DB4C5910034F5FC /* iWatchFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iWatchFramework.h; sourceTree = "<group>"; };
 		5F1F69FC1DB4C5910034F5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1F6A091DB60C8B0034F5FC /* 你究竟有几个好妹妹.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "你究竟有几个好妹妹.mp3"; sourceTree = "<group>"; };
+		5F1F6A0B1DB6176C0034F5FC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		5F254C451DB0681E00DA5255 /* iOS-FFmpeg-Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FFmpeg-Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F254C491DB0681E00DA5255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F254C4B1DB0681E00DA5255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1F6A0C1DB6176C0034F5FC /* MediaPlayer.framework in Frameworks */,
 				5FDA002D1DB080C2003DD655 /* libbz2.tbd in Frameworks */,
 				5FDA00291DB0804F003DD655 /* libiconv.tbd in Frameworks */,
 				5FDA002B1DB08077003DD655 /* libz.tbd in Frameworks */,
@@ -339,12 +344,21 @@
 			path = iWatchFramework;
 			sourceTree = "<group>";
 		};
+		5F1F6A081DB60C830034F5FC /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F6A091DB60C8B0034F5FC /* 你究竟有几个好妹妹.mp3 */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 		5F254C3C1DB0681D00DA5255 = {
 			isa = PBXGroup;
 			children = (
 				5F4BE6EC1DB0D70100798FFB /* RequestDownload */,
 				5FDA002E1DB0819D003DD655 /* Libs */,
 				5F254C471DB0681E00DA5255 /* iOS-FFmpeg-Player */,
+				5F1F6A081DB60C830034F5FC /* Movie */,
 				5F254C611DB0681E00DA5255 /* iOS-FFmpeg-PlayerTests */,
 				5F254C6C1DB0681E00DA5255 /* iOS-FFmpeg-PlayerUITests */,
 				5F1F69CB1DB4C5610034F5FC /* iWatchOS */,
@@ -649,6 +663,7 @@
 		9D9148E56C58E42F23421598 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F1F6A0B1DB6176C0034F5FC /* MediaPlayer.framework */,
 				5FDA002C1DB080C2003DD655 /* libbz2.tbd */,
 				5FDA002A1DB08077003DD655 /* libz.tbd */,
 				5FDA00281DB0804F003DD655 /* libiconv.tbd */,
@@ -800,6 +815,7 @@
 			files = (
 				5F254C581DB0681E00DA5255 /* LaunchScreen.storyboard in Resources */,
 				5F254C551DB0681E00DA5255 /* Assets.xcassets in Resources */,
+				5F1F6A0A1DB60C8B0034F5FC /* 你究竟有几个好妹妹.mp3 in Resources */,
 				5F254C531DB0681E00DA5255 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
