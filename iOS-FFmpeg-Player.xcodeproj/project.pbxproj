@@ -62,8 +62,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5F1F69F31DB4C5620034F5FC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		37BF87C3BF89B27A39E08E69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5F1F69C51DB4C1B10034F5FC /* iOS-FFmpeg-Player.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-FFmpeg-Player.entitlements"; sourceTree = "<group>"; };
+		5F1F69CD1DB4C5610034F5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5F1F69CF1DB4C5610034F5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F1F69D11DB4C5610034F5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1F69DC1DB4C5620034F5FC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5F1F69DD1DB4C5620034F5FC /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		5F1F69DE1DB4C5620034F5FC /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		5F1F69E01DB4C5620034F5FC /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		5F1F69E11DB4C5620034F5FC /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		5F1F69E31DB4C5620034F5FC /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		5F1F69E41DB4C5620034F5FC /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		5F1F69E61DB4C5620034F5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F1F69E81DB4C5620034F5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F1F69FB1DB4C5910034F5FC /* iWatchFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iWatchFramework.h; sourceTree = "<group>"; };
+		5F1F69FC1DB4C5910034F5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F254C451DB0681E00DA5255 /* iOS-FFmpeg-Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-FFmpeg-Player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F254C491DB0681E00DA5255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F254C4B1DB0681E00DA5255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -268,6 +296,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F1F69CB1DB4C5610034F5FC /* iWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F69CC1DB4C5610034F5FC /* Interface.storyboard */,
+				5F1F69CF1DB4C5610034F5FC /* Assets.xcassets */,
+				5F1F69D11DB4C5610034F5FC /* Info.plist */,
+			);
+			path = iWatchOS;
+			sourceTree = "<group>";
+		};
+		5F1F69DA1DB4C5620034F5FC /* iWatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F69DD1DB4C5620034F5FC /* InterfaceController.h */,
+				5F1F69DE1DB4C5620034F5FC /* InterfaceController.m */,
+				5F1F69E01DB4C5620034F5FC /* ExtensionDelegate.h */,
+				5F1F69E11DB4C5620034F5FC /* ExtensionDelegate.m */,
+				5F1F69E31DB4C5620034F5FC /* NotificationController.h */,
+				5F1F69E41DB4C5620034F5FC /* NotificationController.m */,
+				5F1F69E61DB4C5620034F5FC /* Assets.xcassets */,
+				5F1F69E81DB4C5620034F5FC /* Info.plist */,
+				5F1F69DB1DB4C5620034F5FC /* Supporting Files */,
+			);
+			path = "iWatchOS Extension";
+			sourceTree = "<group>";
+		};
+		5F1F69DB1DB4C5620034F5FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F69DC1DB4C5620034F5FC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F1F69FA1DB4C5910034F5FC /* iWatchFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5F1F69FB1DB4C5910034F5FC /* iWatchFramework.h */,
+				5F1F69FC1DB4C5910034F5FC /* Info.plist */,
+			);
+			path = iWatchFramework;
+			sourceTree = "<group>";
+		};
 		5F254C3C1DB0681D00DA5255 = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +347,9 @@
 				5F254C471DB0681E00DA5255 /* iOS-FFmpeg-Player */,
 				5F254C611DB0681E00DA5255 /* iOS-FFmpeg-PlayerTests */,
 				5F254C6C1DB0681E00DA5255 /* iOS-FFmpeg-PlayerUITests */,
+				5F1F69CB1DB4C5610034F5FC /* iWatchOS */,
+				5F1F69DA1DB4C5620034F5FC /* iWatchOS Extension */,
+				5F1F69FA1DB4C5910034F5FC /* iWatchFramework */,
 				5F254C461DB0681E00DA5255 /* Products */,
 				FB966A42EFE964B840E7B294 /* Pods */,
 				9D9148E56C58E42F23421598 /* Frameworks */,
@@ -295,6 +369,7 @@
 		5F254C471DB0681E00DA5255 /* iOS-FFmpeg-Player */ = {
 			isa = PBXGroup;
 			children = (
+				5F1F69C51DB4C1B10034F5FC /* iOS-FFmpeg-Player.entitlements */,
 				5F254C4B1DB0681E00DA5255 /* AppDelegate.h */,
 				5F254C4C1DB0681E00DA5255 /* AppDelegate.m */,
 				5F4BE6BF1DB0B43F00798FFB /* BaseViewController.h */,
@@ -617,6 +692,7 @@
 				5F254C431DB0681D00DA5255 /* Resources */,
 				C155985FBCD9F4E4CD22B6B2 /* Embed Pods Frameworks */,
 				88E729A636983EAFD24F8AF7 /* Copy Pods Resources */,
+				5F1F69F31DB4C5620034F5FC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -677,6 +753,11 @@
 						DevelopmentTeam = 9N6375B547;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					5F254C5D1DB0681E00DA5255 = {
 						CreatedOnToolsVersion = 8.0;
@@ -834,6 +915,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5F1F69CC1DB4C5610034F5FC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1F69CD1DB4C5610034F5FC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		5F254C511DB0681E00DA5255 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -947,22 +1036,54 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B20DFA51739452EDE3288C87 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9N6375B547;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libs/include";
 				INFOPLIST_FILE = "iOS-FFmpeg-Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs/lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ICViewPager\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"RDVTabBarController\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-lavresample",
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lavdevice",
+					"-lavfilter",
+					"-lswscale",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -970,21 +1091,52 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37BF87C3BF89B27A39E08E69 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9N6375B547;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libs/include";
 				INFOPLIST_FILE = "iOS-FFmpeg-Player/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs/lib",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ICViewPager\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"RDVTabBarController\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-lavresample",
+					"-lavcodec",
+					"-lavformat",
+					"-lavutil",
+					"-lavdevice",
+					"-lavfilter",
+					"-lswscale",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

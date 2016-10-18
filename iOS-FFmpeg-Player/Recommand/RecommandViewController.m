@@ -7,6 +7,7 @@
 //
 
 #import "RecommandViewController.h"
+#include <libavcodec/avcodec.h>
 
 @interface RecommandViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor greenColor];
+    printf("%s",avcodec_configuration());
 }
 
 - (void)didReceiveMemoryWarning {
