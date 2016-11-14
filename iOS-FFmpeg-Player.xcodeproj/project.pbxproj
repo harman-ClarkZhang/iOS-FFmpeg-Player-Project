@@ -765,10 +765,13 @@
 				TargetAttributes = {
 					5F254C441DB0681D00DA5255 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9N6375B547;
+						DevelopmentTeam = D5266Q865E;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.HealthKit = {
 								enabled = 0;
 							};
@@ -1055,9 +1058,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9N6375B547;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 威巍 徐 (S3RFN7W39F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 威巍 徐 (S3RFN7W39F)";
+				DEVELOPMENT_TEAM = D5266Q865E;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
@@ -1094,8 +1097,10 @@
 					"-lavfilter",
 					"-lswscale",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bis.hkconnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "50092d9b-2f4e-484f-9627-52c76dc19d1b";
+				PROVISIONING_PROFILE_SPECIFIER = DEVHKconnectpp;
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1110,8 +1115,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9N6375B547;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = D5266Q865E;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS-FFmpeg-Player/PrefixHeader.pch";
@@ -1148,8 +1154,10 @@
 					"-lavfilter",
 					"-lswscale",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "harman.iOS-FFmpeg-Player";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bis.hkconnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6f12a2f-4134-4aee-9e81-7859b6cee7e8";
+				PROVISIONING_PROFILE_SPECIFIER = profile_distribution_hoc_hkconnect;
 				SWIFT_OBJC_BRIDGING_HEADER = "iOS-FFmpeg-Player/Navigation/iOS-FFmpeg-Player-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

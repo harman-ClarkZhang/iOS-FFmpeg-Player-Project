@@ -7,8 +7,6 @@
 //
 
 #import "RecommandViewController.h"
-//#import "KxMovieViewController.h"
-
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libavutil/imgutils.h>
