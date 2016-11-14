@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6OZ-8C-v2h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6OZ-8C-v2h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,9 +21,9 @@
                     <view key="view" contentMode="scaleToFill" id="C6E-iW-9SP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.1855392505" blue="0.74057767829999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="" image="channel_p_n" id="u4v-gT-NFf"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="channel_p_p" id="u4v-gT-NFf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQm-vx-WUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +40,7 @@
                     <view key="view" contentMode="scaleToFill" id="dLR-Cp-2bK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.30704081020000001" green="0.47531724980000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="" image="ranking_p_n" id="SLz-Ak-LuX"/>
                 </viewController>
@@ -55,7 +59,7 @@
                     <view key="view" contentMode="scaleToFill" id="zpt-vF-Qpg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.33494274419999998" green="1" blue="0.87938864999999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="4" title="" image="myqiyi_p_n" id="cUh-y6-Ens"/>
                 </viewController>
@@ -74,19 +78,107 @@
                     <view key="view" contentMode="scaleToFill" id="Qco-mL-l9S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.99312480280000004" blue="0.19254549209999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cQ7-33-uOq">
+                                <rect key="frame" x="16" y="64" width="343" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="U1G-fQ-iyd">
+                                    <size key="itemSize" width="153" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieIdentifier" id="KTV-mS-Ff6">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yc8-3U-eIl">
+                                                    <rect key="frame" x="9" y="8" width="134" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAs-U3-MeK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_download" translatesAutoresizingMaskIntoConstraints="NO" id="6XW-rc-EU4">
+                                        <rect key="frame" x="325" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="6Zb-2y-wah"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="H2r-zg-Z04"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_download" translatesAutoresizingMaskIntoConstraints="NO" id="KRM-zb-2V5">
+                                        <rect key="frame" x="275" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="MtW-Zs-NfQ"/>
+                                            <constraint firstAttribute="width" constant="50" id="sxD-76-TC5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_download" translatesAutoresizingMaskIntoConstraints="NO" id="sF0-G8-pYr">
+                                        <rect key="frame" x="225" y="0.0" width="50" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="EgO-W4-9Lq"/>
+                                            <constraint firstAttribute="width" constant="50" id="y0Q-Iz-dVM"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6XW-rc-EU4" firstAttribute="leading" secondItem="KRM-zb-2V5" secondAttribute="trailing" id="1sV-1k-nFr"/>
+                                    <constraint firstAttribute="trailing" secondItem="6XW-rc-EU4" secondAttribute="trailing" id="4KB-5i-gC1"/>
+                                    <constraint firstAttribute="bottom" secondItem="KRM-zb-2V5" secondAttribute="bottom" id="AYm-QY-l99"/>
+                                    <constraint firstItem="KRM-zb-2V5" firstAttribute="top" secondItem="aAs-U3-MeK" secondAttribute="top" id="ED0-rB-J5q"/>
+                                    <constraint firstAttribute="bottom" secondItem="sF0-G8-pYr" secondAttribute="bottom" id="G4o-N0-b6q"/>
+                                    <constraint firstAttribute="bottom" secondItem="6XW-rc-EU4" secondAttribute="bottom" id="QIP-mV-OgE"/>
+                                    <constraint firstItem="6XW-rc-EU4" firstAttribute="top" secondItem="aAs-U3-MeK" secondAttribute="top" id="ZIB-d0-Iym"/>
+                                    <constraint firstAttribute="height" constant="44" id="bFG-a7-baz"/>
+                                    <constraint firstItem="KRM-zb-2V5" firstAttribute="leading" secondItem="sF0-G8-pYr" secondAttribute="trailing" id="bxd-VH-Z0N"/>
+                                    <constraint firstItem="sF0-G8-pYr" firstAttribute="top" secondItem="aAs-U3-MeK" secondAttribute="top" id="kOa-bP-geG"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Ab-pG-tWt">
+                                <rect key="frame" x="16" y="20" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hek-er-0LQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cQ7-33-uOq" firstAttribute="leading" secondItem="Qco-mL-l9S" secondAttribute="leadingMargin" id="OyD-Jx-HzP"/>
+                            <constraint firstAttribute="trailing" secondItem="aAs-U3-MeK" secondAttribute="trailing" id="RAu-Gw-lfB"/>
+                            <constraint firstItem="aAs-U3-MeK" firstAttribute="top" secondItem="Qco-mL-l9S" secondAttribute="top" constant="20" id="SJU-S3-dgv"/>
+                            <constraint firstItem="cQ7-33-uOq" firstAttribute="top" secondItem="2Ab-pG-tWt" secondAttribute="bottom" id="WQn-Y9-6cB"/>
+                            <constraint firstItem="cQ7-33-uOq" firstAttribute="top" secondItem="aAs-U3-MeK" secondAttribute="bottom" id="XyT-7e-eEv"/>
+                            <constraint firstItem="2Ab-pG-tWt" firstAttribute="leading" secondItem="Qco-mL-l9S" secondAttribute="leadingMargin" id="ZUm-6P-LAC"/>
+                            <constraint firstItem="cQ7-33-uOq" firstAttribute="trailing" secondItem="Qco-mL-l9S" secondAttribute="trailingMargin" id="giw-KU-S0d"/>
+                            <constraint firstItem="aAs-U3-MeK" firstAttribute="leading" secondItem="Qco-mL-l9S" secondAttribute="leading" id="mpb-V2-wxf"/>
+                            <constraint firstItem="2Ab-pG-tWt" firstAttribute="top" secondItem="Mqo-La-hvt" secondAttribute="bottom" id="nqJ-lY-myG"/>
+                            <constraint firstItem="IET-Bq-af0" firstAttribute="top" secondItem="cQ7-33-uOq" secondAttribute="bottom" id="oMJ-AE-0my"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="" image="recommend_p_n" id="Pxc-VV-Clz"/>
+                    <connections>
+                        <outlet property="movieDisplayCollectView" destination="cQ7-33-uOq" id="ttt-Ra-wh7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSy-oF-2ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="-678"/>
+            <point key="canvasLocation" x="1149.5999999999999" y="-678.71064467766121"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mtJ-Aa-42L">
             <objects>
                 <tabBarController id="6OZ-8C-v2h" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="036-sn-sJc">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" id="036-sn-sJc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -104,9 +196,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="channel_p_n" width="128" height="98"/>
+        <image name="channel_p_p" width="128" height="98"/>
         <image name="myqiyi_p_n" width="128" height="98"/>
         <image name="ranking_p_n" width="128" height="98"/>
         <image name="recommend_p_n" width="128" height="98"/>
+        <image name="search_download" width="30" height="30"/>
+        <image name="search_logo" width="163" height="27"/>
     </resources>
 </document>

@@ -14,6 +14,8 @@
 
 @interface RecommandViewController ()
 
+@property (weak, nonatomic) IBOutlet UICollectionView *movieDisplayCollectView;
+
 @end
 
 @implementation RecommandViewController
